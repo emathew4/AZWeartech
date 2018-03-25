@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">AZWeartech</string>
+
+    <!-- Strings for PEMFActivity -->
+    <string name="magnitude">Magnitude</string>
+    <string name="pulse_width">Pulse Width</string>
+    <string name="pemf_help">Here is text explaining what changing the above parameters does</string>
+    <string name="pemf_about">about pemf</string>
+    <string name="about_pemf_text">Here\'s some info about PEMF</string>
+
+    <!-- Strings for TENSActivity -->
+    <string name="frequency">Frequency (Hz)</string>
+    <string name="tens_help">Here is text explaining what changing the above parameters does</string>
+    <string name="tens_about">about tens</string>
+    <string name="about_tens_text">Here\'s some info about TENS</string>
+
+
+    <!-- Strings for AboutActivity -->
+    <string name="about_page_text">this is about AZWeartech</string>
+    <string name="title_activity_about_pemf">AboutPEMFActivity</string>
+</resources>
