@@ -24,17 +24,15 @@ public class TENSActivity extends AppCompatActivity {
         currentFreqProgress=0;
 
         /** Get TextView, SeekBar, and Button */
-        TextView freqLow = (TextView) findViewById(R.id.freqLowNumber);
-        TextView freqHigh = (TextView) findViewById(R.id.freqHighNumber);
+        TextView freqLow = (TextView) findViewById(R.id.freqVal);
         SeekBar freqSeekBar = (SeekBar) findViewById(R.id.freqSeekBar);
         Button aboutButton = (Button) findViewById(R.id.TENSHelpButton);
 
         /** Set Low and High values in the text boxes by the sliders */
         freqLow.setText(""+FREQUENCY_LOW);
-        freqHigh.setText(""+FREQUENCY_HIGH);
 
         /** Set Maxes for the SeekBars based on the high values for each */
-        freqSeekBar.setMax(FREQUENCY_HIGH);
+        freqSeekBar.setMax(FREQUENCY_HIGH-FREQUENCY_LOW);
 
         /** Create onClickListener for the Frequency SeekBar */
         freqSeekBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
@@ -42,6 +40,7 @@ public class TENSActivity extends AppCompatActivity {
             @Override
             public void onProgressChanged(SeekBar seekBar, int progressValue, boolean fromUser) {
                 currentFreqProgress=progressValue;
+                updateFreqText();
                 changeFrequency();
             }
 
@@ -69,5 +68,12 @@ public class TENSActivity extends AppCompatActivity {
     /** Sends updated magnitude value to the arduino */
     public void changeFrequency() {
         //Put code for changing the frequency setting in the arduinio
+    }
+
+    /** Updates the TextView that displays the current frequency value */
+    public void updateFreqText(){
+        TextView freqVal = (TextView) findViewById(R.id.freqVal);
+        int freqValue = currentFreqProgress + FREQUENCY_LOW;
+        freqVal.setText(""+freqValue);
     }
 }

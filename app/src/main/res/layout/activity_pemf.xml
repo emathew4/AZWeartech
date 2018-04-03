@@ -18,31 +18,26 @@
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="match_parent"
-            android:text="@string/magnitude" />
+            android:text="@string/duty_cycle" />
 
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="2"
             android:layout_height="match_parent"
             android:orientation="horizontal">
 
             <TextView
-                android:id="@+id/magLowNumber"
+                android:id="@+id/dutyCycleVal"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:text="0"
                 android:layout_marginLeft="16dp" />
 
             <SeekBar
-                android:id="@+id/magSeekBar"
-                android:layout_width="150dp"
+                android:id="@+id/dutyCycleSeekBar"
+                android:layout_width="0dp"
+                android:layout_weight="1"
                 android:layout_height="match_parent" />
-
-            <TextView
-                android:id="@+id/magHighNumber"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:text="100"
-                android:layout_marginLeft="16dp"/>
 
         </LinearLayout>
 
@@ -61,12 +56,13 @@
             android:text="@string/pulse_width"/>
 
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="2"
             android:layout_height="match_parent"
             android:orientation="horizontal">
 
             <TextView
-                android:id="@+id/pulseLowNumber"
+                android:id="@+id/pulseVal"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:text="0"
@@ -74,15 +70,9 @@
 
             <SeekBar
                 android:id="@+id/pulseSeekBar"
-                android:layout_width="150dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
                 android:layout_height="match_parent" />
-
-            <TextView
-                android:id="@+id/pulseHighNumber"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:text="100"
-                android:layout_marginLeft="16dp"/>
 
         </LinearLayout>
 

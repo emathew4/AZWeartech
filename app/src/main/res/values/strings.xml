@@ -2,11 +2,13 @@
     <string name="app_name">AZWeartech</string>
 
     <!-- Strings for PEMFActivity -->
-    <string name="magnitude">Magnitude</string>
+    <string name="duty_cycle">Duty Cycle</string>
     <string name="pulse_width">Pulse Width</string>
     <string name="pemf_help">Here is text explaining what changing the above parameters does</string>
     <string name="pemf_about">about pemf</string>
-    <string name="about_pemf_text">Here\'s some info about PEMF</string>
+    <string name="about_pemf_text">\tPulsed Electromagnetic Field (PEMF) therapy utilizes a wire coil
+        in conjunction with a frequency generator to create a pulsed electromagnetic field.
+        PEMF has been shown to reduce pain, increase bone healing, and also to treat depression.</string>
 
     <!-- Strings for TENSActivity -->
     <string name="frequency">Frequency (Hz)</string>
