@@ -18,7 +18,7 @@
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="match_parent"
-            android:text="@string/duty_cycle" />
+            android:text="@string/frequency" />
 
         <LinearLayout
             android:layout_width="0dp"
@@ -53,7 +53,7 @@
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="match_parent"
-            android:text="@string/pulse_width"/>
+            android:text="@string/intensity"/>
 
         <LinearLayout
             android:layout_width="0dp"
