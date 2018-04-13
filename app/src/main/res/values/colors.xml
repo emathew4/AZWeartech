@@ -5,4 +5,5 @@
     <color name="colorAccent">#ECEFF1</color>
 
     <color name="background">#FAFAFA</color>
+    <color name="link_color">#3366BB</color>
 </resources>

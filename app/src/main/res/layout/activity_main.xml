@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center"
-    android:layout_margin="16dp"
+    android:layout_margin="32dp"
     tools:context="com.azweartech.azweartech.MainActivity">
 
 

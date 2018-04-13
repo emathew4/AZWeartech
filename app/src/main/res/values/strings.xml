@@ -20,11 +20,19 @@
         of electrical current for nerve excitation. This non-invasive stimulation has been shown
         to reduce pain (both chronic and acute) by \"massaging\" the affected area. </string>
 
-
     <!-- Strings for AboutActivity -->
     <string name="about_page_text">\tAZWeartech is a research and technology center developed
         under the Fulton Schools of Engineering at Arizona State University. AZWeartech will
         provide a proof of concept for the Partnership for Economic Innovation (PEI) regarding
         an industry-led investment strategy and increased public funding for higher education.</string>
     <string name="title_activity_about_pemf">AboutPEMFActivity</string>
+
+    <!-- Strings for Login/Account related Activities -->
+    <string name="email_text">Email</string>
+    <string name="password_text">Password</string>
+    <string name="login_text">Sign In</string>
+    <string name="create_account">Create an Account</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="username">Username</string>
+    <string name="send_password">Send Password</string>
 </resources>
