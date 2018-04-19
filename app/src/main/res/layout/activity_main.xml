@@ -9,6 +9,13 @@
     android:layout_margin="32dp"
     tools:context="com.azweartech.azweartech.MainActivity">
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/logout"
+        android:layout_gravity="left"
+        android:text="Logout"
+        android:textColor="@color/link_color"/>
 
     <TextView
         android:id="@+id/pemf"

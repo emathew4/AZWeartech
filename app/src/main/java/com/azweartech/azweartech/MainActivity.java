@@ -15,6 +15,16 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        /** Set OnClickListener for Logout Button */
+        TextView logout = (TextView) findViewById(R.id.logout);
+        logout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent LogoutIntent = new Intent(MainActivity.this, Logout.class);
+                startActivity(LogoutIntent);
+            }
+        });
+
         /** Set OnClickListener for PEMF */
         TextView pemf = (TextView) findViewById(R.id.pemf);
         pemf.setOnClickListener(new View.OnClickListener() {
