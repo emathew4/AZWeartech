@@ -7,7 +7,7 @@
     <string name="pemf_help">Different frequencies can be used for different applications.
         Increasing the intensity will result in a greater electromagnetic field being experienced.</string>
     <string name="pemf_about">about pemf</string>
-    <string name="about_pemf_text">\tPulsed Electromagnetic Field (PEMF) therapy utilizes a wire coil
+    <string name="about_pemf_text">Pulsed Electromagnetic Field (PEMF) therapy utilizes a wire coil
         in conjunction with a frequency generator to create a pulsed electromagnetic field.
         PEMF has been shown to reduce pain, increase bone healing, and also to treat depression.</string>
 
@@ -16,12 +16,12 @@
         being felt more frequently, while decreasing the frequency will produce the opposite
         result.</string>
     <string name="tens_about">about tens</string>
-    <string name="about_tens_text">\tTranscutaneous Electrical Nerve Stimulation (TENS) is the use
+    <string name="about_tens_text">Transcutaneous Electrical Nerve Stimulation (TENS) is the use
         of electrical current for nerve excitation. This non-invasive stimulation has been shown
         to reduce pain (both chronic and acute) by \"massaging\" the affected area. </string>
 
     <!-- Strings for AboutActivity -->
-    <string name="about_page_text">\tAZWeartech is a research and technology center developed
+    <string name="about_page_text">AZWeartech is a research and technology center developed
         under the Fulton Schools of Engineering at Arizona State University. AZWeartech will
         provide a proof of concept for the Partnership for Economic Innovation (PEI) regarding
         an industry-led investment strategy and increased public funding for higher education.</string>
