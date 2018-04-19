@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
@@ -26,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         /** Set OnClickListener for PEMF */
-        TextView pemf = (TextView) findViewById(R.id.pemf);
+        ImageView pemf = (ImageView) findViewById(R.id.pemf);
         pemf.setOnClickListener(new View.OnClickListener() {
             // The code in this method will be executed when the numbers View is clicked on.
             @Override
@@ -37,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         /** Set OnClickListener for TENS */
-        TextView tens = (TextView) findViewById(R.id.tens);
+        ImageView tens = (ImageView) findViewById(R.id.tens);
         tens.setOnClickListener(new View.OnClickListener() {
             // The code in this method will be executed when the numbers View is clicked on.
             @Override

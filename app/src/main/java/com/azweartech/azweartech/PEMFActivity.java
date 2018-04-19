@@ -14,13 +14,13 @@ import java.util.Set;
 public class PEMFActivity extends AppCompatActivity {
 
     /** Low and High values to put in the text boxes by the sliders */
-    static final int DUTY_CYCLE_LOW=0;
-    static final int DUTY_CYCLE_HIGH=100;
-    static final int PULSE_LOW=0;
-    static final int PULSE_HIGH=100;
+    static final int FREQUENCY_LOW=0;
+    static final int FREQUENCY_HIGH=10000;
+    static final int INTENSITY_LOW=0;
+    static final int INTENSITY_HIGH=100;
 
-    int currentDutyCycleProgress;
-    int currentPulseProgress;
+    int currentFrequencyProgress;
+    int currentIntensityProgress;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,34 +28,34 @@ public class PEMFActivity extends AppCompatActivity {
         setContentView(R.layout.activity_pemf);
 
         /** Initialize current duty cycle and pulse values */
-        currentDutyCycleProgress=0;
-        currentPulseProgress=0;
+        currentFrequencyProgress=0;
+        currentIntensityProgress=0;
 
 
         /** Get TextViews, SeekBars, and the Button from the xml file */
 
-        TextView dutyCycleVal = (TextView) findViewById(R.id.dutyCycleVal);
-        SeekBar dutyCycleSeekBar = (SeekBar) findViewById(R.id.dutyCycleSeekBar);
-        TextView pulseVal = (TextView) findViewById(R.id.pulseVal);
-        SeekBar pulseSeekBar = (SeekBar) findViewById(R.id.pulseSeekBar);
+        TextView frequencyVal = (TextView) findViewById(R.id.frequencyVal);
+        SeekBar frequencySeekBar = (SeekBar) findViewById(R.id.freqSeekBar);
+        TextView intensityVal = (TextView) findViewById(R.id.intensityVal);
+        SeekBar intensitySeekBar = (SeekBar) findViewById(R.id.intensitySeekBar);
         Button aboutButton = (Button) findViewById(R.id.PEMFHelpButton);
 
         /** Set Low and High values in the text boxes by the sliders */
-        dutyCycleVal.setText(""+DUTY_CYCLE_LOW);
-        pulseVal.setText(""+PULSE_LOW);
+        frequencyVal.setText(""+FREQUENCY_LOW);
+        intensityVal.setText(""+INTENSITY_LOW);
 
         /** Set Maxes for the SeekBars based on the high values for each */
-        dutyCycleSeekBar.setMax(DUTY_CYCLE_HIGH-DUTY_CYCLE_LOW);
-        pulseSeekBar.setMax(PULSE_HIGH-PULSE_LOW);
+        frequencySeekBar.setMax((FREQUENCY_HIGH-FREQUENCY_LOW)/100);
+        intensitySeekBar.setMax(INTENSITY_HIGH-INTENSITY_LOW);
 
-        /** Create onClickListener for the Duty Cycle SeekBar */
-        dutyCycleSeekBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
-            /** Registers changes to the Duty Cycle SeekBar */
+        /** Create onClickListener for the Frequency SeekBar */
+        frequencySeekBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+            /** Registers changes to the Frequency SeekBar */
             @Override
             public void onProgressChanged(SeekBar seekBar, int progressValue, boolean fromUser) {
-                currentDutyCycleProgress=progressValue;
-                updateDutyCycleText();
-                changeDutyCycle();
+                currentFrequencyProgress=progressValue;
+                updateFrequencyText();
+                changeFrequency();
             }
 
             @Override
@@ -69,14 +69,14 @@ public class PEMFActivity extends AppCompatActivity {
             }
         });
 
-        /** Create onClickListener for the Pulse SeekBar */
-        pulseSeekBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
-            /** Registers changes to the Pulse SeekBar */
+        /** Create onClickListener for the Intensity SeekBar */
+        intensitySeekBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+            /** Registers changes to the Intensity SeekBar */
             @Override
             public void onProgressChanged(SeekBar seekBar, int progressValue, boolean fromUser) {
-                currentPulseProgress=progressValue;
-                updatePulseText();
-                changePulse();
+                currentIntensityProgress=progressValue;
+                updateIntensityText();
+                changeIntensity();
             }
 
             @Override
@@ -96,27 +96,27 @@ public class PEMFActivity extends AppCompatActivity {
 
     }
 
-    /** Sends updated duty cycle value to the arduino */
-    public void changeDutyCycle() {
-        //Put code for changing the duty cycle setting in the arduinio
+    /** Sends updated frequency value to the arduino */
+    public void changeFrequency() {
+        //Put code for changing the duty cycle setting in the arduino
     }
 
-    /** Sends updated pulse value to the arduino */
-    public void changePulse(){
+    /** Sends updated intensity value to the arduino */
+    public void changeIntensity(){
         //Put code for changing the pulse setting in the arduino
     }
 
     /** Updates the TextView that displays the current duty cycle value */
-    public void updateDutyCycleText(){
-        TextView dutyCycleVal = (TextView) findViewById(R.id.dutyCycleVal);
-        int dutyCycleValue = currentDutyCycleProgress+ DUTY_CYCLE_LOW;
-        dutyCycleVal.setText(""+dutyCycleValue);
+    public void updateFrequencyText(){
+        TextView frequencyVal = (TextView) findViewById(R.id.frequencyVal);
+        int frequencyValue = currentFrequencyProgress*100+ FREQUENCY_LOW;
+        frequencyVal.setText(""+frequencyValue);
     }
 
     /** Updates the TextView that displays the current pulse value */
-    public void updatePulseText(){
-        TextView pulseVal = (TextView) findViewById(R.id.pulseVal);
-        int pulseValue = currentPulseProgress + PULSE_LOW;
-        pulseVal.setText(""+pulseValue);
+    public void updateIntensityText(){
+        TextView intensityVal = (TextView) findViewById(R.id.intensityVal);
+        int intensityValue = currentIntensityProgress + INTENSITY_LOW;
+        intensityVal.setText(""+intensityValue);
     }
 }

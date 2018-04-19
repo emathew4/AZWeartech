@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/background"
     android:orientation="vertical"
     android:padding="@dimen/activity_padding"
 
@@ -16,28 +17,28 @@
 
         <TextView
             android:layout_width="0dp"
-            android:layout_weight="1"
             android:layout_height="match_parent"
+            android:layout_weight="1"
             android:text="@string/frequency" />
 
         <LinearLayout
             android:layout_width="0dp"
-            android:layout_weight="2"
             android:layout_height="match_parent"
+            android:layout_weight="2"
             android:orientation="horizontal">
 
             <TextView
-                android:id="@+id/dutyCycleVal"
+                android:id="@+id/frequencyVal"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:text="0"
-                android:layout_marginLeft="16dp" />
+                android:layout_marginLeft="16dp"
+                android:text="0" />
 
             <SeekBar
-                android:id="@+id/dutyCycleSeekBar"
+                android:id="@+id/freqSeekBar"
                 android:layout_width="0dp"
-                android:layout_weight="1"
-                android:layout_height="match_parent" />
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
 
         </LinearLayout>
 
@@ -46,33 +47,33 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingTop="32dp"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:paddingTop="32dp">
 
         <TextView
             android:layout_width="0dp"
-            android:layout_weight="1"
             android:layout_height="match_parent"
-            android:text="@string/intensity"/>
+            android:layout_weight="1"
+            android:text="@string/intensity" />
 
         <LinearLayout
             android:layout_width="0dp"
-            android:layout_weight="2"
             android:layout_height="match_parent"
+            android:layout_weight="2"
             android:orientation="horizontal">
 
             <TextView
-                android:id="@+id/pulseVal"
+                android:id="@+id/intensityVal"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:text="0"
-                android:layout_marginLeft="16dp"/>
+                android:layout_marginLeft="16dp"
+                android:text="0" />
 
             <SeekBar
-                android:id="@+id/pulseSeekBar"
+                android:id="@+id/intensitySeekBar"
                 android:layout_width="0dp"
-                android:layout_weight="1"
-                android:layout_height="match_parent" />
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
 
         </LinearLayout>
 
@@ -82,16 +83,16 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingTop="32dp"
-        style="@style/HelpText"
-        android:text="@string/pemf_help"/>
+        android:text="@string/pemf_help" />
 
     <Button
         android:id="@+id/PEMFHelpButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
         android:layout_gravity="center_horizontal"
-        android:text="@string/pemf_about" />
+        android:layout_marginTop="32dp"
+        android:text="@string/pemf_about"
+        android:textColor="@color/button_color" />
 
 
 </LinearLayout>

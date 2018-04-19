@@ -142,7 +142,7 @@ public class CreateAccountActivity extends AppCompatActivity {
                                     try {
                                         // go to home screen which should make a call to access
                                         // their auth user model.
-                                        Intent LandingIntent = new Intent(CreateAccountActivity.this, LoginActivity.class);
+                                        Intent LandingIntent = new Intent(CreateAccountActivity.this, MainActivity.class);
                                         startActivity(LandingIntent);
 
                                     } catch (Exception e) {

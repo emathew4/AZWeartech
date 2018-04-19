@@ -11,7 +11,7 @@ import android.widget.TextView;
 
 public class TENSActivity extends AppCompatActivity {
     static final int FREQUENCY_LOW=0;
-    static final int FREQUENCY_HIGH=100;
+    static final int FREQUENCY_HIGH=120;
 
     int currentFreqProgress;
 
