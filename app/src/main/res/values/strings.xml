@@ -12,18 +12,87 @@
     <string name="pemf_help">Different frequencies can be used for different applications.
         Increasing the intensity will result in a greater electromagnetic field being experienced.</string>
     <string name="pemf_about">about pemf</string>
-    <string name="about_pemf_text">Pulsed Electromagnetic Field (PEMF) therapy utilizes a wire coil
-        in conjunction with a frequency generator to create a pulsed electromagnetic field.
-        PEMF has been shown to reduce pain, increase bone healing, and also to treat depression.</string>
+    <string name="about_pemf_text">\t\tPulsed electromagnetic field therapy (PEMFT), also known as low
+        field magnetic stimulation (LFMS), and tumor treating fields (TTF) uses electromagnetic
+        fields in an attempt to heal non-union fractures, glioblastomas (brain tumors) [1]
+        and depression.[2] By 2007 the FDA had cleared several such stimulation devices.[3]\n\t\tIn 2013
+        the U.S. Food and Drug Administration (FDA) warned a manufacturer for promoting the device
+        for unapproved uses such as cerebral palsy and spinal cord injury.[4]\n\t\tThe original PEMF
+        devices consisted of a Helmholtz coil which generated a magnetic field. The patient\'s body
+        was placed inside the magnetic field to deliver treatment. Today, the majority of PEMF
+        wellness devices resemble a typical yoga mat in dimensions but are slightly thicker to
+        house several flat spiral coils to produce an even electromagnetic field. A frequency
+        generator is then used to energize the coils to create a pulsed electromagnetic field. A
+        wide variety of professional and consumer PEMF devices are sold and marketed as FDA
+        registered wellness devices.[9] The majority are manufactured in Germany, Austria and
+        Switzerland and are imported into North America as electric massagers or full body
+        electric yoga mats. They are either placed on a massage table for clinical use or
+        directly on the floor in the home to practice simple yoga postures. The companies that
+        sell and manufacture them as "general wellness products" are not permitted to make medical
+        claims of effectiveness in treating disease.[9]\n\nSource:https://en.wikipedia.org/wiki/
+        Pulsed_electromagnetic_field_therapy</string>
 
     <!-- Strings for TENSActivity -->
     <string name="tens_help">Increasing the frequency will result in the muscle contractions
         being felt more frequently, while decreasing the frequency will produce the opposite
         result.</string>
-    <string name="tens_about">about tens</string>
-    <string name="about_tens_text">Transcutaneous Electrical Nerve Stimulation (TENS) is the use
-        of electrical current for nerve excitation. This non-invasive stimulation has been shown
-        to reduce pain (both chronic and acute) by \"massaging\" the affected area. </string>
+    <string name="tens_about">about VR/tens</string>
+    <string name="about_tens_text">\t\tTranscutaneous electrical nerve stimulation (TENS or TNS) is the
+        use of electric current produced by a device to stimulate the nerves for therapeutic
+        purposes. TENS, by definition, covers the complete range of transcutaneously applied
+        currents used for nerve excitation although the term is often used with a more restrictive
+        intent, namely to describe the kind of pulses produced by portable stimulators used to treat
+        pain.[1] The unit is usually connected to the skin using two or more electrodes. A typical
+        battery-operated TENS unit is able to modulate pulse width, frequency and intensity.
+        Generally TENS is applied at high frequency (>50 Hz) with an intensity below motor
+        contraction (sensory intensity) or low frequency (&lt;10 Hz) with an intensity that produces
+        motor contraction.[2] While the use of TENS has proved effective in clinical studies, there
+        is controversy over which conditions the device should be used to treat.[3]\n\t\tTENS devices
+        available to the domestic market are used as a non-invasive nerve stimulation intended to
+        reduce both acute and chronic pain. One review from 2007 felt that the evidence supports a
+        benefit in chronic musculoskeletal pain[4] while another review (from the Cochrane
+        Collaboration in 2008) deemed the evidence of poor quality and thus no conclusions were
+        possible regarding chronic pain.[5] Results from a task force on neck pain in 2008 found no
+        clinically significant benefit to TENS for the treatment of neck pain when compared to a
+        placebo treatment.[6] A 2010 review did not find evidence to support the use of TENS for
+        chronic low back pain.[7][8] There is tentative evidence that it may be useful for painful
+        diabetic neuropathy.[7] As of 2015, the efficacy of TENS therapy for phantom limb pain is
+        not known as no randomized controlled trials have been performed.[9]\n\t\tIn principle, an
+        adequate intensity of stimulation is necessary to achieve pain relief with TENS.[10][11]
+        An analysis of treatment fidelity (meaning that the delivery of TENS in a trial was in
+        accordance with current clinical advice, such as using "a strong but comfortable sensation"
+        and suitable, frequent treatment durations) showed that higher fidelity trials tended to
+        have a positive outcome.[12]\n\t\tA few studies have shown objective evidence that TENS may
+        modulate or suppress pain signals in the brain. One used evoked cortical potentials to
+        show that electric stimulation of peripheral A-beta sensory fibers reliably suppressed
+        A-delta fiber nociceptive processing.[13] Two other studies used functional magnetic
+        resonance imaging (fMRI): one showed that high-frequency TENS produced a decrease in
+        pain-related cortical activations in patients with carpal tunnel syndrome,[14] while the
+        other showed that low-frequency TENS decreased shoulder impingement pain and modulated
+        pain-induced activation in the brain.[15]\n\t\tA head-mounted TENS device called Cefaly was
+        approved by the United States Food and Drug Administration, on March 11, 2014, for the
+        prevention of migraines. The Cefaly device was found effective in preventing migraine
+        attacks in a randomized sham-controlled trial.[16] This was the first TENS device which
+        the FDA approved for pain prevention, as opposed to pain suppression.[17]\n\nhttps://en.
+        wikipedia.org/wiki/Transcutaneous_electrical_nerve_stimulation</string>
+
+    <string name="about_vr">\t\tVirtual reality (VR) is a computer-generated scenario that
+        simulates experience. The immersive environment can be similar to the real world or it can
+        be fantastical, creating an experience not possible in our physical reality. Augmented
+        reality systems may also beconsidered a form of VR that layers virtual information
+        over a live camera feed into aheadset, or through a smartphone or tablet device.\n\t\t
+        Current VR technology most commonly uses virtual reality headsets or multi-projected
+        environments, sometimes in combination with physical environments or props, to generate
+        realistic images, sounds and other sensations that simulate a user\'s physical presence in
+        a virtual or imaginary environment. A person using virtual reality equipment is able to
+        "look around" the artificial world, move around in it, and interact with virtual features
+        or items. The effect is commonly created by VR headsets consisting of a head-mounted
+        display with a small screen in front of the eyes, but can also be created through specially
+        designed rooms with multiple large screens.\n\t\tVR systems that include transmission of
+        vibrations and other sensations to the user through a game controller or other devices are
+        known as haptic systems. This tactile information is generally known as force feedback
+        in medical, video gaming and military training applications.\n\nSource: https://en.
+        wikipedia.org/wiki/Virtual_reality</string>
 
     <!-- Strings for AboutActivity -->
     <string name="about_page_text">AZWeartech is a research and technology center developed
